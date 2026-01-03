@@ -757,7 +757,7 @@ p {
   right: 0;
   background-color: var(--white);
   height: 100%;
-  width: 450px;
+  width: 350px;
   padding-top: 80px;
   z-index: 999;
   -webkit-transform: translateX(100%);

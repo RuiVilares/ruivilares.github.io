@@ -1,26 +1,15 @@
-# Business - Free Bootstrap 5 Business & Corporate Template
+# From Job Interview To Career Success - Miguel Sarmento
 
-#### Preview
+## Author
 
- - [Demo](https://themewagon.github.io/Business/)
+Rui Vilares @ 2025  
 
-#### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/business/)
- 
- 
-## Getting Started
+## License
 
 Clone from GitHub 
 ```
 https://github.com/themewagon/Business.git
 ```
-
-## Author
-
-Design and code are completely written by Ayro UI's design and development team.  
-
-
-## License
 
  - Design and Code is Copyright &copy; [Ayro UI](https://ayroui.com/)
  - Licensed under [MIT]

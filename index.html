@@ -12,7 +12,7 @@
   <title>From job interview to career success</title>
 
   <!--====== Favicon Icon ======-->
-  <link rel="shortcut icon" href="assets/images/signature.svg" type="image/svg" />
+  <link rel="shortcut icon" href="assets/images/logo.png" type="image/svg" />
 
   <!--====== Bootstrap css ======-->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="assets/css/glightbox.min.css" />
 
   <link rel="stylesheet" href="style.css" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,7 +41,7 @@
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="index.html">
-              <img src="assets/images/signature.svg" alt="Logo" />
+              <img src="assets/images/signature-white.png" alt="Signature logo" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNine"
               aria-controls="navbarNine" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,7 +86,7 @@
     </div>
     <div class="sidebar-content">
       <div class="sidebar-logo">
-        <a href="index.html"><img src="assets/images/signature-black.svg" alt="Logo" /></a>
+        <a href="index.html"><img src="assets/images/signature.png" alt="Signature logo" /></a>
       </div>
       <p class="text">From Job Interview To Career Success</p>
       <!-- logo -->
@@ -104,13 +106,7 @@
             <a href="mailto:miguel.sarmento.author@gmail.com"><i class="lni lni-envelope"></i></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/"><i class="lni lni-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/"><i class="lni lni-facebook"></i></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/"><i class="lni lni-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/miguel-sarmento/"><i class="lni lni-linkedin"></i></a>
           </li>
         </ul>
       </div>
@@ -133,8 +129,8 @@
               What if you could step into your next job interview feeling in total control?  Learn the moves that increase your value, help you read the room, and push your career in the direction you want.
             </p>
             <div class="button">
-              <a href="javascript:void(0)" class="btn primary-btn">Buy now</a>
-              <button type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#readMoreModal">
+              <a href="https://www.amazon.es/" class="btn primary-btn">Buy now</a>
+              <button id="readMoreButton" type="button" class="btn primary-btn" data-bs-toggle="modal" data-bs-target="#readMoreModal">
                 Read more
               </button>
             </div>
@@ -142,7 +138,7 @@
         </div>
         <div class="col-lg-4 offset-lg-1 offset-3 col-6">
           <div class="header-image">
-            <img src="assets/images/header/cover-min.png" alt="#" />
+            <img src="assets/images/header/cover-min.png" alt="Book cover" />
           </div>
         </div>
       </div>
@@ -157,16 +153,12 @@
       <div class="row align-items-center">
         <div class="col-lg-5 offset-lg-0 offset-3 col-6">
           <div class="about-image-five">
-            <img src="assets/images/about/author.jpeg" alt="about" />
+            <img src="assets/images/about/author.jpeg" alt="Author picture" />
           </div>
         </div>
         <div class="col-lg-6 offset-lg-1 col-12">
           <div class="about-five-content">
             <h6 class="small-title text-lg">About the author</h6>
-            <!--<h2 class="main-title fw-bold">Miguel Sarmento</h2>-->
-            <div class="col-lg-5 col-md-3 col-5">
-              <img src="assets/images/signature.png" alt="Logo" />
-            </div>
             <div class="about-five-tab">
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-who" role="tabpanel" aria-labelledby="nav-who-tab">
@@ -175,24 +167,12 @@
                   <p>I write to make career advice simple and practical. My goal is to help you avoid mistakes I’ve seen so many people make and to reach a version of yourself you might not have imagined possible.</p>
                   <p>When I’m not working with people, I love hanging out with friends, sharing meals, and traveling.</p>
                   <p>I want you to feel we’re in this together and that you’re not alone in facing today’s career challenges.</p>
-                </div>
-                <div class="tab-pane fade" id="nav-vision" role="tabpanel" aria-labelledby="nav-vision-tab">
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, look like readable English.</p>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some
-                    form,
-                    by injected humour.</p>
-                </div>
-                <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-history-tab">
-                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                    when
-                    looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, look like readable English.</p>
-                  <p>There are many variations of passages of Lorem Ipsum available, but the majority have in some
-                    form,
-                    by injected humour.</p>
+                  <p>
+                    <br>
+                    <div class="col-lg-5 col-md-3 col-5">
+                      <img src="assets/images/signature.png" alt="Signature logo" />
+                    </div>
+                  </p>
                 </div>
               </div>
             </div>
@@ -205,132 +185,79 @@
 
   <!--====== ABOUT FIVE PART ENDS ======-->
 
-  <!-- Start Cta Area -->
-  <section id="call-action" class="call-action">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
-          <div class="inner-content">
-            <h2>Get career tips directly in your inbox</h2>
-            <form>
-              <div class="form-group row">
-                <div class="col-6">
-                  <input type="text" class="form-control" id="inputName" placeholder="Your Name">
-                </div>
-                <div class="col-6">
-                  <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
-                </div>
-              </div>
-            </form>
-            <div class="light-rounded-buttons">
-              <a href="javascript:void(0)" class="btn primary-btn-outline">Subscribe</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Cta Area -->
-
-
-  <!-- Modal -->
-  <div class="modal fade" id="readMoreModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h1 class="modal-title fs-5 w-100" id="exampleModalLabel">From Job Interview To Career Success</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="col-4 offset-4">
-            <div class="header-image">
-              <img src="assets/images/header/cover-min.png" alt="#" />
-            </div>
-          </div>
-          <br>
-          <p>This book was written for anyone who wants to feel more in control of their career. It gives you simple steps and honest guidance, so you can show up well in interviews, ask for the salary you deserve, and make better choices as you grow.</p>
-          <br>
-          <p>It doesn’t matter if you’re starting out, chasing a promotion, or thinking about a new path. You’ll find practical ideas that help you understand what really happens inside companies, how to negotiate without fear, and how to avoid the mistakes that stop many people along the way.</p>
-          <br>
-          <p>These are the skills most professionals never learn, even though they shape everything: your confidence, your opportunities, and the way you move through your career. If you want a path that feels steady and makes sense for you, this book gives you the tools to build it.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
   <!-- ========================= contact-section start ========================= -->
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12">
-          <div class="contact-item-wrapper">
-            <div class="row align-items-center">
-              <div class="col-12 col-md-6 col-xl-6">
-                <div class="row">
-                  <a href="mailto:miguel.sarmento.author@gmail.com">
-                    <div class="contact-item">
-                      <div class="contact-icon">
-                        <i class="lni lni-envelope"></i>
-                      </div>
-                      <div class="contact-content">
-                        <h4>Email</h4>
-                        <p>miguel.sarmento.author@gmail.com</p>
-                      </div>
-                    </div>
-                  </a>
+  <section id="contact">
+  
+    <!-- Start Cta Area -->
+    <section class="call-action">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9">
+            <div class="inner-content">
+              <h2>Get career tips directly in your inbox</h2>
+              <form id="newsletter-form">
+                <div class="form-group row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+                  </div>
+                  <div class="col-6">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                  </div>
                 </div>
+              </form>
+              <div class="light-rounded-buttons">
+                <button id="subscribeButton" type="submit" class="btn primary-btn-outline" data-bs-toggle="modal" data-bs-target="#newsletterModal" onclick="submitForm()">Subscribe</a>
               </div>
-              <div class="col-12 col-md-6 col-xl-6">
-                <div class="row">
-                  <a href="https://www.linkedin.com/">
-                    <div class="contact-item">
-                      <div class="contact-icon">
-                        <i class="lni lni-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Cta Area -->
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12">
+            <div class="contact-item-wrapper">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6 col-xl-6">
+                  <div class="row">
+                    <a href="mailto:miguel.sarmento.author@gmail.com">
+                      <div class="contact-item">
+                        <div class="contact-icon">
+                          <i class="lni lni-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                          <h4>Email</h4>
+                          <p>miguel.sarmento.author@gmail.com</p>
+                        </div>
                       </div>
-                      <div class="contact-content">
-                        <h4>Linkedin</h4>
-                        <p>miguel.sarmento.author</p>
-                      </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-6">
-                <div class="row">
-                  <a href="https://www.facebook.com/">
-                    <div class="contact-item">
-                      <div class="contact-icon">
-                        <i class="lni lni-facebook"></i>
+                <div class="col-12 col-md-6 col-xl-6">
+                  <div class="row">
+                    <a href="https://www.linkedin.com/in/miguel-sarmento/">
+                      <div class="contact-item">
+                        <div class="contact-icon">
+                          <i class="lni lni-linkedin"></i>
+                        </div>
+                        <div class="contact-content">
+                          <h4>Linkedin</h4>
+                          <p>miguel-sarmento</p>
+                        </div>
                       </div>
-                      <div class="contact-content">
-                        <h4>Facebook</h4>
-                        <p>miguel.sarmento.author</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-xl-6">
-                <div class="row">
-                  <a href="https://www.instagram.com/">
-                    <div class="contact-item">
-                      <div class="contact-icon">
-                        <i class="lni lni-instagram"></i>
-                      </div>
-                      <div class="contact-content">
-                        <h4>Instagram</h4>
-                        <p>miguel.sarmento.author</p>
-                      </div>
-                    </div>
-                  </a>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
   </section>
   <!-- ========================= contact-section end ========================= -->
 
@@ -346,7 +273,7 @@
               <div class="footer-widget f-about">
                 <div class="logo">
                   <a href="index.html">
-                    <img src="assets/images/signature.png" alt="#" class="img-fluid" />
+                    <img src="assets/images/signature.png" alt="Signature logo" class="img-fluid" />
                   </a>
                 </div>
                 <p>
@@ -363,7 +290,53 @@
   </footer>
   <!--/ End Footer Area -->
 
-	
+  <!-- Modal -->
+  <div class="modal fade" id="readMoreModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h1 class="modal-title fs-5 w-100" id="exampleModalLabel">From Job Interview To Career Success</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="col-4 offset-4">
+            <div class="header-image">
+              <img src="assets/images/header/cover-min.png" alt="Book cover" />
+            </div>
+          </div>
+          <br>
+          <p>This book was written for anyone who wants to feel more in control of their career. It gives you simple steps and honest guidance, so you can show up well in interviews, ask for the salary you deserve, and make better choices as you grow.</p>
+          <br>
+          <p>It doesn’t matter if you’re starting out, chasing a promotion, or thinking about a new path. You’ll find practical ideas that help you understand what really happens inside companies, how to negotiate without fear, and how to avoid the mistakes that stop many people along the way.</p>
+          <br>
+          <p>These are the skills most professionals never learn, even though they shape everything: your confidence, your opportunities, and the way you move through your career. If you want a path that feels steady and makes sense for you, this book gives you the tools to build it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h1 class="modal-title fs-5 w-100 text-success" id="exampleModalLabel">Awesome!</h1>
+        </div>
+        <div class="modal-body">
+          <div class="row text-center">
+            <div class="header-image">
+              <img src="assets/images/success.png" alt="Success image" />
+              <br><br>
+              <p class="text-center">Thanks for signing up to my newsletter.</p>
+              <br>
+            </div>
+          </div>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-success" data-bs-dismiss="modal" aria-label="Close">Ok</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <a href="#" class="scroll-top btn-hover">
     <i class="lni lni-chevron-up"></i>
@@ -407,6 +380,28 @@
       overlayLeft.classList.add("open");
     });
 
+    // ===== Newsletter Form
+    function submitForm() {
+      var name = document.querySelector("#inputName").value;
+      var email = document.querySelector("#inputEmail").value;
+
+      console.log(name + " " + email);
+
+      var form = document.querySelector('#newsletter-form'); 
+      form.reset();
+    }
+
+    $('#readMoreModal').on('shown.bs.modal', function (e) {
+        $('#readMoreButton').one('focus', function (e) {
+            $(this).blur();
+        });
+    });
+
+    $('#newsletterModal').on('shown.bs.modal', function (e) {
+        $('#subscribeButton').one('focus', function (e) {
+            $(this).blur();
+        });
+    });
   </script>
 </body>
 
